@@ -1,11 +1,12 @@
 import "./App.css";
+import LoginContainer from "./containers/auth/LoginContainer";
 
 function App() {
-  const welcomeMessage = "Welcome to DARASSA APP";
+  
 
   return (
     <div className="App">
-      <p>{welcomeMessage}</p>
+    <LoginContainer/>
     </div>
   );
 }
