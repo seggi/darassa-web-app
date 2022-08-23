@@ -1,2 +1,6 @@
 export const CHANGE_USERNAME = "CHANGE_USERNAME";
 export const CHANGE_AGE = "CHANGE_AGE";
+
+export const REQUEST_READ_USER = "REQUEST_READ_USER";
+export const SUCCESS_READ_USER = "SUCCESS_READ_USER";
+export const FAIL_READ_USER = "FAIL_READ_USER";
