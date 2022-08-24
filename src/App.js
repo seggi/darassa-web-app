@@ -1,33 +1,34 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
-import routes, { authRoutes } from "./routes";
+import AuthMiddleware from "./middleware/authMiddleware";
+import routes from "./routes";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
-          {routes.map((route) => (
-            <Route
-              key={route.name}
-              index={route.index || true}
-              path={route.path}
-              element={(props) => {
-                if (route.isProtected) {
-                  props.history.push({
-                    pathname: "/login",
-                  });
-                }
-                return (
-                  <route.element
-                    location={props.location}
-                    history={props.history}
-                    match={props.match}
-                  />
-                );
-              }}
-            />
-          ))}
+          {routes.map((route, index) => {
+            return route.isProtected ? (
+              <Route
+                element={<AuthMiddleware isAuthProtected={route.isProtected} />}
+              >
+                <Route
+                  path={route.path}
+                  key={route.name}
+                  index={route.index}
+                  element={route.element}
+                />
+              </Route>
+            ) : (
+              <Route
+                path="/login"
+                key={route.name}
+                index={route.index || true}
+                element={route.element}
+              />
+            );
+          })}
         </Routes>
       </BrowserRouter>
     </div>
