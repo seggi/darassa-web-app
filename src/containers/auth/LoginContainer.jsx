@@ -1,4 +1,5 @@
 import React from 'react'
+import LoginPage from '../../components/auth/Login'
 
 
 
@@ -6,7 +7,8 @@ const LoginContainer = () => {
 
   return (
     <div >
-      <h1>Welcome to DARASSA APP</h1>
+     <LoginPage/>
+
     </div>
   )
 }
