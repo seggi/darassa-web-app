@@ -1,10 +1,10 @@
 import React from 'react'
-import AuthBox from '../common/AuthBox'
+import LoginInputForm from '../common/LoginInputForm';
 import "./style.css"
 
 const LoginPage = () => {
   return (
-      <AuthBox pageTitle={"Login"} />
+    <LoginInputForm pageTitle={"Login"} />
   )
 }
 

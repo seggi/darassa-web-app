@@ -48,6 +48,13 @@
     border: none;
     font-size: 14px;
  }
+
+
+ .input-items input[type="text"] {
+    text-align: center;
+    border: none;
+    font-size: 14px;
+ }
  
 
 .input-items input[type="submit"] {
@@ -88,3 +95,10 @@
     color: #228EDD; 
  }
  
+
+ .authentication-box {
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+ }

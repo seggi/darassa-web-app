@@ -19,13 +19,13 @@ const routes = [
   {
     path: "/404",
     element: <h1>404 Page Error</h1>,
-    isProtected: true,
+    isProtected: false,
     key: "Error page",
   },
   {
-    path: "/signup",
+    path: "/register",
     element: <RegisterContainer />,
-    isProtected: true,
+    isProtected: false,
     key: "signup",
   },
 ];
