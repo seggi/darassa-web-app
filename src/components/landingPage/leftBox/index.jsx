@@ -1,25 +1,20 @@
 import React from 'react'
-import { FaLanguage} from "react-icons/fa";
-import { welcomeMessage } from '../../../containers/appLabel/text';
+import { APP_NAME } from '../../../constants/appLabel/appLabel'
+import LoginPage from '../../auth/Login'
+import './style.css';
 
-import "./style.css";
 
 const LeftBox = () => {
   return (
     <>
         <div className="left-box__contents">
-            <div className="box-content__column">
-                <div className="top-items-row">
-                    <button>
-                        <span>English</span> 
-                        <FaLanguage />>
-                    </button>
+            <div className="content-box__column">
+                <div className="content-box__top-item">
+                    <h2 className="appTitle">
+                        {APP_NAME}
+                    </h2>
                 </div>
-                <div className="bottom-item-column">
-                    <span id="welcome">{welcomeMessage.welcome}</span>
-                    <span id="quotation">{welcomeMessage.quotation}</span>
-                    <span id="quotation1">{welcomeMessage.quotation1}</span>
-                </div>
+                <LoginPage />
             </div>
         </div>
     </>

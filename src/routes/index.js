@@ -1,20 +1,21 @@
-import LoginContainer from "../containers/auth/LoginContainer";
+import LandingPage from "../components/landingPage";
 import RegisterContainer from "../containers/auth/RegisterContainer";
 import DashboardContainer from "../containers/dashboard";
 
 const routes = [
   {
     path: "/login",
-    element: <LoginContainer />,
+    element: <LandingPage />,
     isProtected: false,
     key: "login",
   },
   {
-    path: "/",
+    path: "/dashboard",
     element: <DashboardContainer />,
     isProtected: true,
     key: "dashboard",
   },
+
   {
     path: "/404",
     element: <h1>404 Page Error</h1>,
@@ -23,11 +24,10 @@ const routes = [
   },
   {
     path: "/signup",
-    element: <RegisterContainer/>,
+    element: <RegisterContainer />,
     isProtected: true,
     key: "signup",
   },
-  
 ];
 
 export default routes;

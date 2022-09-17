@@ -1,5 +1,5 @@
 import React from 'react'
-import { APP_NAME } from '../../constants/appLabel'
+import { APP_NAME } from '../../constants/appLabel/appLabel'
 import "./style.css"
 
 const Register = () => {
