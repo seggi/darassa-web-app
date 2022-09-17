@@ -1,11 +1,10 @@
 import React from 'react'
+import AuthBox from '../common/AuthBox'
 import "./style.css"
 
 const LoginPage = () => {
   return (
-    <div>
-      <h1 className='content-box'>Welcome to Darassa</h1>
-    </div>
+      <AuthBox pageTitle={"Login"} />
   )
 }
 

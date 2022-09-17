@@ -1,0 +1,26 @@
+.left-box__contents {
+    width: 40%;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    background-color: #f4f4f4;
+}
+
+.content-box__column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 8px;
+    align-content: center;
+    margin-left: 80px;
+}
+
+.content-box__top-item {
+    width: 80%;
+    padding: 8px;
+    margin: 5% auto;
+}
+
+.appTitle {
+    float: left;
+}

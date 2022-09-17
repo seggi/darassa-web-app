@@ -1,0 +1,90 @@
+.auth-items__box {
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 5% auto;
+    width: 80%;
+    margin-top: 50px;
+}
+.top-items {
+    margin-top: 10px;
+}
+
+.box-title {
+    font-size: 18px;
+}
+
+.bottom-items {
+    margin-top: 10px;
+}
+
+.bottom-items form {
+    width: 100%;
+}
+
+.input-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.input-items input {
+    margin-top: 20px;
+    width: 304px;
+    height: 44px;
+    background: rgba(229, 229, 229, 0.74);
+    border-radius: 5px;
+}
+
+.input-items input[type="email"] {
+   text-align: center;
+   border: none;
+   font-size: 14px;
+}
+
+.input-items input[type="password"] {
+    text-align: center;
+    border: none;
+    font-size: 14px;
+ }
+ 
+
+.input-items input[type="submit"] {
+    background: rgba(226, 26, 34, 0.91);
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 50px;
+ }
+
+ .input-items input[type="submit"]:hover {
+    cursor: pointer;
+ }
+
+ .forget-pwd {
+    color: #FF0303;
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: right;
+ }
+
+ .goto {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    margin-top: 50px;
+ }
+
+ .goto span {
+    font-size: 14px;
+    color: #333;
+ }
+
+ .goto i {
+    font-size: 14px;
+    color: #228EDD; 
+ }
+ 

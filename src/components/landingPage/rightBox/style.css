@@ -1,0 +1,74 @@
+.right-box__contents {
+    background-image: url("../../../assets/images/welcome_profile.png");
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    right: 0;
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    margin-left: 0px;
+}
+
+.box-content__column {
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 8px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.488);
+}
+
+.top-items-row button {
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    border: none;
+    color: white;
+    float: right;
+    width: 150px;
+    justify-content: space-around;
+}
+
+.top-items-row button:hover {
+    cursor: pointer;
+}
+
+.top-items-row span {
+    font-size: 16px;
+    align-self: center;
+}
+
+.top-items-row i {
+    font-size: 35px;
+    align-self: center;
+    margin-top: 8px;
+}
+
+.bottom-item-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 50px;
+    padding: 8px;
+    margin-left: 30px;
+}
+
+.bottom-item-column  #welcome {
+    color: white;
+    font-weight: 300;
+    font-size:medium;
+}
+
+.bottom-item-column #quotation {
+    color: white;
+    font-weight: 500;
+    font-size: large;
+}
+
+.bottom-item-column #quotation1 {
+    color: white;
+    font-weight: bold;
+    font-size:xx-large;
+}
