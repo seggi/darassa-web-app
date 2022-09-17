@@ -3,9 +3,7 @@ import Register from '../../components/auth/Register'
 
 
 const RegisterContainer = () => {
-  return (
-    <div><Register/></div>
-  )
+  return <Register/>
 }
 
 export default RegisterContainer

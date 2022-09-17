@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
+import LandingPage from "./components/landingPage";
 import AuthMiddleware from "./middleware/authMiddleware";
 import routes from "./routes";
 
@@ -22,13 +23,14 @@ function App() {
               </Route>
             ) : (
               <Route
-                path="/login"
+                path={route.path}
                 key={route.name}
                 index={route.index || true}
                 element={route.element}
               />
             );
           })}
+          <Route path={"/"} element={<LandingPage />} />
         </Routes>
       </BrowserRouter>
     </div>
