@@ -1,0 +1,47 @@
+.left-box__contents {
+    position: absolute;
+}
+
+.box-content__column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.top-items-row button {
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    border: none;
+    color: white;
+    float: right;
+}
+
+.top-items-row button:hover {
+    cursor: pointer;
+}
+
+.bottom-item-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.bottom-item-column  #welcome {
+    color: white;
+    font-weight: 300;
+    font-size:medium;
+}
+
+.bottom-item-column #quotation {
+    color: white;
+    font-weight: 500;
+    font-size: large;
+}
+
+.bottom-item-column #quotation1 {
+    color: white;
+    font-weight: bold;
+    font-size:xx-large;
+}
